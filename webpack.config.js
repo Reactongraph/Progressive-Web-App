@@ -10,11 +10,10 @@ const webpackPlugins = [
     filename: 'index.html',
   } ),
 
-
-  // new Dotenv( {
-  //   path: './.env', // Path to .env file (this is the default)
-  //   systemvars: true,
-  // } ),
+  new Dotenv( {
+    path: './.env', // Path to .env file (this is the default)
+    systemvars: true,
+  } ),
 
  new CopyPlugin( {
     patterns: [
