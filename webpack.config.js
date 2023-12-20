@@ -9,11 +9,14 @@ const webpackPlugins = [
     template: path.resolve( __dirname, 'public/index.html' ),
     filename: 'index.html',
   } ),
-  new Dotenv( {
-    path: './.env', // Path to .env file (this is the default)
-    systemvars: true,
-  } ),
-  new CopyPlugin( {
+
+
+  // new Dotenv( {
+  //   path: './.env', // Path to .env file (this is the default)
+  //   systemvars: true,
+  // } ),
+
+ new CopyPlugin( {
     patterns: [
       { from: './src/favicon.ico', to: '' },
       { from: './src/manifest.json', to: '' },
