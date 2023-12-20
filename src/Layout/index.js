@@ -8,7 +8,7 @@ const Layout = ({children}) => {
     <div>
       <Header/>
       <Hero/>
-      <div className="max-w-screen-xl m-auto mt-12 bg-red-900">
+      <div className="max-w-screen-xl m-auto mt-12">
         {children}
       </div>
     </div>
