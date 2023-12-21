@@ -15,7 +15,7 @@ const Header = () => {
     <Nav/>
     <div className="user-profile">
         <div className="user">
-          <div className="name">Imran Sayed</div>
+          <div className="name">Ram Agrawal</div>
           <div className="image">
             <img src="../images/netflix-logo.png" alt="netflix"/>
           </div>
