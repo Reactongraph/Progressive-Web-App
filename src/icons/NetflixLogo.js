@@ -1,6 +1,6 @@
 import * as React from "react";
 const SvgNetflixLogo = (props) => (
-  <svg width={300} height={81.387} data-reactid=".0.0.0.0" {...props}>
+  <svg width={300} height={81} data-reactid=".0.0.0.0" {...props}>
     <g data-reactid=".0.0.0.0.0">
       <g data-reactid=".0.0.0.0.0.0">
         <path

@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	background: #221f1f;
 	color: #ffffff;
@@ -21,12 +25,11 @@ p {
 }
 
 .header {
-	/* FF3.6-15 */
-	/* Chrome10-25,Safari5.1-6 */
+
 	background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6000000", endColorstr="#00000000", GradientType=0);
-	/* IE6-9 */
+
 	display: flex;
 	padding: 40px;
 	position: fixed;
@@ -38,10 +41,17 @@ p {
 }
 
 .logo {
-	width: 320px;
+	
+	width: 160px;
 	height: auto;
 	margin-right: 10px;
 	transition: margin 0.125s ease;
+}
+
+@media only screen and (max-width: 600px) {
+	.logo {
+		width: 150px;
+	}
 }
 
 .logo svg {
@@ -76,6 +86,7 @@ p {
 	font-size: 14px;
 	transition: background 0.125s ease;
 	border-radius: 3px;
+	white-space: nowrap;
 }
 
 .navigation ul li:hover {
@@ -86,6 +97,13 @@ p {
 .user-profile {
 	margin-left: auto;
 }
+
+@media only screen and (max-width: 600px) {
+	.user-profile {
+		display: none;
+	}
+}
+
 
 .user-profile .user {
 	display: flex;
@@ -135,7 +153,15 @@ p {
 	z-index: 4;
 	width: 500px;
 	left: 10vw;
-	top: 10vw;
+	top: 20vh;
+}
+
+@media only screen and (max-width: 600px) {
+	.hero .content {
+		top: 36vw;
+		/* display: flex;
+		flex-wrap: wrap; */
+	}
 }
 
 .hero .content .logo {
@@ -145,9 +171,9 @@ p {
 	left: -5px;
 }
 
-.hero .content p {
+/* .hero .content p {
 	width: 100%;
-}
+} */
 
 .hero .content .button-wrapper {
 	display: flex;
@@ -197,8 +223,58 @@ p {
 	background: #e50914;
 }
 
-.netflix-logo{
-	background-image: url('../images/netflix-logo.png');
-	width : 50px;
-	/* background-color: #e50914; */
+@media screen and (max-width: 600px) {
+  .navigation nav ul {
+    flex-direction: column;
+    align-items: center;
+	position: absolute;
+	right: 10px;
+  }
+
+  li {
+    margin-right: 0;
+    margin-bottom: 10px; /* Adjust the spacing between navigation items in mobile view */
+  }
 }
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+	.menu-toggle {
+	  display: block; /* Show for smaller screens */
+	}
+  
+	.navigation {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	}
+   .header{
+	padding: 20px;
+   }
+	ul {
+	  width: 100px;
+	  box-sizing: border-box;
+	  padding: 10px;
+	  flex-direction: column;
+	  /* background-color: #222; */
+	  position: absolute;
+	  top: 15px;
+	  right: 20px !important;
+	  display: flex;
+	}
+  
+	li{
+	  margin: 0;
+	  padding: 10px;
+	  width: 100%;
+	}
+  }
+
+  @media screen and (max-width: 600px) {
+
+	.hero .content {
+		
+		width: 80vw;
+		margin-top: 30px;
+	}
+  }

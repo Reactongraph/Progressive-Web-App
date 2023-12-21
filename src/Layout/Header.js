@@ -3,21 +3,23 @@ import { NetflixLogo } from '../icons'
 
 import { Link } from 'react-router-dom'
 import Nav from './nav'
+import netflix_logo from '../images/netflix-logo.png'
 
 const Header = () => {
   return (
     <header className='header'>
         <div id='logo' className='logo'>
-            <Link to="/">
+            <Link to="/" style={{height:'41px',width:'150px' , display:'inline-block'}}>
+
             <NetflixLogo/>
             </Link>
         </div>
     <Nav/>
     <div className="user-profile">
         <div className="user">
-          <div className="name">Ram Agrawal</div>
+         
           <div className="image">
-            <img src="../images/netflix-logo.png" alt="netflix"/>
+            <img src={netflix_logo} alt="netflix"/>
           </div>
         </div>
       </div>
