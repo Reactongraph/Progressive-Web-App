@@ -1,6 +1,5 @@
 import React from 'react'
 import { NetflixLogo } from '../icons'
-
 import { Link } from 'react-router-dom'
 import Nav from './nav'
 import netflix_logo from '../images/netflix-logo.png'
@@ -10,8 +9,7 @@ const Header = () => {
     <header className='header'>
         <div id='logo' className='logo'>
             <Link to="/" style={{height:'41px',width:'150px' , display:'inline-block'}}>
-
-            <NetflixLogo/>
+           <NetflixLogo/>
             </Link>
         </div>
     <Nav/>

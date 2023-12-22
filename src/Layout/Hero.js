@@ -1,11 +1,13 @@
 import React from 'react';
 import NetflixBackgroundImage from '../images/netflix-background.png';
+import narcos_logo from '../images/narcos_logo.png'
 
 const Hero = () => {
   return (
     <div id="hero" className="hero">
       <div className="content">
-        <img className="logo" src="http://www.returndates.com/backgrounds/narcos.logo.png"/><br/>
+      <img className="logo" src={narcos_logo} alt="narcos"/>
+        <br/>
         <h2>Season 2 now available</h2>
         <p>
           Lorem ipsum dolor sit amet,
